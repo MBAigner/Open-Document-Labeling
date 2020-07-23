@@ -1,0 +1,6 @@
+table
+text
+list
+plot
+header
+footer

@@ -1,0 +1,26 @@
+<annotation>
+  <folder>../main/input</folder>
+  <filename>eu-001-page0.jpg</filename>
+  <path>/Users/at057034/Documents/Master Thesis/Table_Modules/Open-Document-Labeling/main/input/eu-001-page0.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>2480</width>
+    <height>3509</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>table</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>362</xmin>
+      <ymin>1229</ymin>
+      <xmax>2105</xmax>
+      <ymax>1658</ymax>
+    </bndbox>
+  </object>
+</annotation>

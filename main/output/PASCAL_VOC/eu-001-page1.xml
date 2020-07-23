@@ -1,0 +1,14 @@
+<annotation>
+  <folder>../main/input</folder>
+  <filename>eu-001-page1.jpg</filename>
+  <path>/Users/at057034/Documents/Master Thesis/Table_Modules/Open-Document-Labeling/main/input/eu-001-page1.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>2480</width>
+    <height>3509</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+</annotation>
