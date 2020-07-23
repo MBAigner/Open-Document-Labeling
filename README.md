@@ -1,6 +1,8 @@
 # Open Document Labeling
 A tool for labeling document regions as a basis for various region detection task.
-The tool is based on the work of https://github.com/Cartucho/OpenLabeling.
+
+The tool is based on the work of https://github.com/Cartucho/OpenLabeling and adapted for a labeling of PDF documents.
+Example PDFs are obtained from the ICDAR Table Recognition Challenge 2013 https://roundtrippdf.com/en/data-extraction/pdf-table-recognition-dataset/.
 
 IN PROGRESS
 
@@ -13,8 +15,8 @@ IN PROGRESS
 
 ## Labeling Environment
 
-![keyboard](https://github.com/MBAigner/Open-Document-Labeling/blob/master/keyboard_usage.jpg)
-
+<img src="./documentation/labeling_env.png" width="500" />
+<img src="./documentation/keyboard_usage.jpg" />
 
 ## Structure
 
