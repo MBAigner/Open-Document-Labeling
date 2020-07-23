@@ -1,5 +1,5 @@
 # Open Document Labeling
-A tool for labeling document regions as a basis for various region detection tasks.
+A tool for labeling document regions as a basis for various region detection task, based on the work of https://github.com/Cartucho/OpenLabeling.
 
 ## How-to
 
