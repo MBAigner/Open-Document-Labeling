@@ -20,13 +20,14 @@ The process of labeling regions is supported with a graphical user interface.
 
 A page of a document is shown in the main screen.
 Users can draw rectangles over document regions in order to label them.
-This is done by simply clicking on the according region for starting or ending the labeling process.
+This is done by simply clicking left on the according region for starting or ending the labeling process.
+Labels can be deleted with a right click and changed with a double click.
 
-<img src="./documentation/labeling_env.png" width="500" />
+<center><img src="./documentation/labeling_env.png" width="500" /></center>
 
 Pages as well as annotation classes can be switched using the following keyboard commands:
 
-<img src="./documentation/keyboard_usage.jpg" />
+<center><img src="./documentation/keyboard_usage.jpg" /></center>
 
 ## Output Format
 
