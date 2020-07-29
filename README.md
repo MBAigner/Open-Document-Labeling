@@ -3,17 +3,28 @@
 With Open Document Labeling, we provide a tool for the annotation of rectangular document regions for various document region detection and classification tasks.
 The process of labeling regions is supported with a graphical user interface.
 
+## Open Issues
+
+* The original width and height of a document will be stored in the label output.
+
 ## How-to
 
-* Input documents used for labeling in ```data/custom/pdfs/```
-* Run ```main/main.py```
-* Label documents, as described in the next section
-* The output label csv will be stored one directory in ```data/custom/```
+* Store input documents used forlabeling in ```data/custom/pdfs/```.
+* Run ```main/main.py```.
+* Label documents, as described in the next section.
+* After closing the UI, the output labels will be stored as a CSV file in ```data/custom/``` as ```gt_labeled_datetime.csv```.
 
 ## Labeling Environment
 
+A page of a document is shown in the main screen.
+Users can draw rectangles over document regions in order to label them.
+
 <img src="./documentation/labeling_env.png" width="500" />
 <img src="./documentation/keyboard_usage.jpg" />
+
+## Output Format
+
+
 
 ## Project Structure
 
