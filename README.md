@@ -3,12 +3,6 @@
 With Open Document Labeling, we provide a tool for the annotation of rectangular document regions for various document region detection and classification tasks.
 The process of labeling regions is supported with a graphical user interface.
 
-## Open Issues
-
-* The original width and height of a document will be stored in the label output.
-* We plan to support more annotations than just tables soon.
-* The annotation type will be stored in the output csv.
-
 ## How-to
 
 * Store input documents used forlabeling in ```data/custom/pdfs/```.
@@ -54,6 +48,11 @@ The file contains the following columns:
   * ```constants```: paths to input, output and ground-truth data, supported file types
   * ```StorageUtil```: store/load functionalities
   
+## Open Issues
+
+* The original width and height of a document will be stored in the label output.
+* We plan to support more annotations than just tables soon.
+* The annotation type will be stored in the output csv.
 
 ## Acknowledgements
 
