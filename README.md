@@ -6,6 +6,8 @@ The process of labeling regions is supported with a graphical user interface.
 ## Open Issues
 
 * The original width and height of a document will be stored in the label output.
+* We plan to support more annotations than just tables soon.
+* The annotation type will be stored in the output csv.
 
 ## How-to
 
@@ -18,13 +20,25 @@ The process of labeling regions is supported with a graphical user interface.
 
 A page of a document is shown in the main screen.
 Users can draw rectangles over document regions in order to label them.
+This is done by simply clicking on the according region for starting or ending the labeling process.
 
 <img src="./documentation/labeling_env.png" width="500" />
+
+Pages as well as annotation classes can be switched using the following keyboard commands:
+
 <img src="./documentation/keyboard_usage.jpg" />
 
 ## Output Format
 
-
+The output file containing the labeled regions is then stored as a CSV file ```data/custom/``` as ```gt_labeled_datetime.csv```.
+The label coordinates are stored absolute.
+However, we will provide the used width and height of pages in order to make it possible to transform the coordinates if needed.
+The file contains the following columns:
+* ```file```:  path to the labeled input file
+* ```page```: annotated page referring to the file, starting with 0
+* ```width```: absolute width of the page 
+* ```height```: absolute height of the page 
+* ```bounding_box```: list containing the annotated regions. Those are stored using 8 coordinates, referred to the 4 corner points: top left, bottom left, bottom right, top right.
 
 ## Project Structure
 
