@@ -50,7 +50,6 @@ The file contains the following columns:
   
 ## Open Issues
 
-* The original width and height of a document will be stored in the label output.
 * We plan to support more annotations than just tables soon.
 * The annotation type will be stored in the output csv.
 
