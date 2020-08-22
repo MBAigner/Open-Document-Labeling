@@ -23,4 +23,16 @@
       <ymax>1482</ymax>
     </bndbox>
   </object>
+  <object>
+    <name>plot</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>286</xmin>
+      <ymin>1577</ymin>
+      <xmax>2185</xmax>
+      <ymax>2654</ymax>
+    </bndbox>
+  </object>
 </annotation>

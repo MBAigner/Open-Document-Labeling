@@ -3,24 +3,19 @@ import argparse
 import json
 import os
 import re
-
 import cv2
 import numpy as np
 from tqdm import tqdm
-
 from lxml import etree
 import xml.etree.cElementTree as ET
-
 from pdf2image import convert_from_path
-
-# from converter.PDF_Converter import PDFLocationConverter
+from converter.PDFContentConverter import PDFContentConverter
 from util import constants
 from util import StorageUtil
 import pandas as pd
 import time
-# from converter import PDF_Converter
 
-DELAY = 20 # keyboard delay (in milliseconds)
+DELAY = 20  # keyboard delay (in milliseconds)
 WITH_QT = False
 try:
     cv2.namedWindow('Test')
@@ -1065,14 +1060,9 @@ if __name__ == '__main__':
                                 file["file"] = items[0]
                                 file["page"] = int(items[1])
                                 # coordinate transformation
-                                # TODO
-                                # conv = PDFLocationConverter(None)
-                                # _, media_boxes = conv.process_pages(open(file["file"], "rb"))
-                                # media_box = media_boxes[file["page"]]
-                                media_box = {"x0page": 0,
-                                             "x1page": 0,
-                                             "y0page": 0,
-                                             "y1page": 0}
+                                conv = PDFContentConverter(file["file"])
+                                media_boxes = conv.get_media_boxes()
+                                media_box = media_boxes[file["page"]]
                                 xf = (media_box["x1page"] - media_box["x0page"])/int(items[3])
                                 yf = (media_box["y1page"] - media_box["y0page"])/int(items[4])
                                 # coordinates
